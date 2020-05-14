@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/colourPicker"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ToggleButton
+            android:id="@+id/lineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/line"
+            android:text="@string/empty"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/rectangleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/rectangle"
+            android:text="@string/empty"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/circleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/circle"
+            android:text="@string/empty"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/selectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/selection"
+            android:text="@string/empty"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ImageButton
+            android:id="@+id/eraserButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/eraser"
+            android:text="@string/empty"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/colourPicker"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/toolbar"
+        app:layout_constraintRight_toLeftOf="@id/mainView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ToggleButton
+            android:id="@+id/redButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/red"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/orangeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/orange"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/yellowButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/yellow"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/greenButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/green"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/blueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/blue"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/purpleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/purple"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+
+        <ToggleButton
+            android:id="@+id/greyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/grey"
+            android:textOff="@string/empty"
+            android:textOn="@string/empty" />
+    </LinearLayout>
+
+    <com.example.drawingapp.AppView
+        android:id="@+id/mainView"
+        android:layout_width="898dp"
+        android:layout_height="898dp"
+        android:layout_weight="0"
+        android:background="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/colourPicker"
+        app:layout_constraintRight_toLeftOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/mainView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
