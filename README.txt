@@ -9,3 +9,6 @@ Features:
 6. Select and pinch to resize
 
 Run on Pixel C API 29
+
+![Vertical View](https://github.com/ErikaLal/drawingapp/blob/master/vertical.PNG)
+![Horizontal View](https://github.com/ErikaLal/drawingapp/blob/master/horizontal.PNG)
